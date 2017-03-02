@@ -1,0 +1,184 @@
+body{
+	background: #f7f7f7;
+}
+header{
+    width: 100%;
+    height:0.9375rem;
+	background: #fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+header h2{
+	height:0.9375rem;
+	text-align: center; 
+	color:#333333;
+	line-height: 0.9375rem;
+	font-weight: normal;
+	background: #f9f9f9;
+	border-bottom: 1px #d1d2d3 solid
+}
+
+header a{
+	display: block;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+	position:absolute;
+	left:3%;
+	top:0;
+	padding:0 0.1562rem;
+	font-size: 0.4062rem;
+	font-family: "SimSun";
+}
+.gray-bar{
+    height: 0.1875rem;
+    background: #f7f7f7;
+    margin-top:0.9375rem;
+}
+.gray-bar1{
+    height: 0.1875rem;
+    background: #f7f7f7;
+}
+.center{
+	width:100%;
+	height:4.2188rem;
+	position: relative;
+}
+.succeed{
+	width:6.5625rem;
+	height:1.9688rem;
+	position: absolute;
+	left: 1.9531rem;
+	top:0.5rem;
+}
+.succeed img{
+	width:1.9688rem;
+	float: left;
+}
+.succeed-right{
+	float: left;
+	width:3.9062rem;
+	margin-left:0.625rem;
+}
+.succeed-right p:nth-child(1){
+	font-size: 0.4375rem;
+	line-height: 0.75rem;
+	color:#ff1250;
+}
+.succeed-right p:nth-child(2){
+	font-size: 0.3125rem;
+	line-height: 0.5rem;
+	color:#999999;
+}
+
+.succeed-bott{
+	width:100%;
+	height:0.5938rem;
+}
+.succeed-bott a{
+	display: inline-block;
+	width:2.5rem;
+	height:0.5938rem;
+	line-height:0.5938rem;
+	text-align: center;
+	border:0.0156rem #eeeeee solid;
+	background: #f9f9f9;
+	position: absolute;
+	top:2.9688rem;
+}
+.succeed-bott a:nth-child(1){
+	left:1.9531rem;
+}
+.succeed-bott a:nth-child(2){
+	right:1.9531rem;
+}
+.success{
+	width:100%;
+}
+.success img{
+	width:100%;
+}
+
+
+
+
+
+
+
+
+
+.guess-like{
+	height: 0.9375rem;
+	border:1px #eee solid;
+	border-left: none;
+	border-right:none;
+	background: url("../img/icon_love.jpg") 0.3125rem center no-repeat;
+	background-size:0.375rem;
+	padding-left: 0.8594rem;
+	line-height: 0.9375rem;
+	font-size: 0.4062rem;
+}
+
+.like-list ul{
+	width:100%;
+	overflow-x: hidden;
+}
+
+.like-list ul li{
+	width: 50%;
+	overflow-x: hidden;
+	float: left;
+	box-sizing: border-box;
+	padding:0.3125rem;
+	border-bottom: 1px #eee solid;
+}
+
+.like-list ul li:nth-of-type(2n-1){
+	border-right: 1px #eee solid;
+}
+
+.like-list ul li img{
+	width: 4.375rem;
+	margin: 0 auto;
+}
+
+.like-list ul li p{
+	margin:0.1562rem 0;
+	font-size: 0.375rem;
+}
+
+.like-list ul li span{
+	font-size: 0.4062rem;
+	color: #ff2052;
+}
+
+.like-list ul li span i{
+	font-size: 0.25rem;
+}
+
+.like-list ul li s{
+	margin-left: 0.4688rem;
+	color: #ccc;
+}
+.loading{
+	height:0.9375rem;
+	line-height:0.9375rem;
+	text-align: center;
+	background: #FFF;
+	color:#ccc;
+}
+
+.loading img{
+	display: inline-block;
+	height:0.625rem;
+}
+
+.loading *{
+	vertical-align: middle;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left:0;
+}

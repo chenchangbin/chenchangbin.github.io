@@ -1,0 +1,43 @@
+/* 共同的css样式 */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+ul,ol{
+	list-style:none;
+}
+
+em,i{
+	font-style: normal;
+}
+
+a{
+	text-decoration: none;
+	color:#333;
+}
+
+a:hover{
+	color:red;
+}
+
+img{
+	display: block;
+	border:0;
+}
+
+.clearfix:after{
+	display:block;
+	height:0;
+	overflow:hidden;
+	content:"";
+	clear:both;
+}
+
+@media screen and (max-width:320px){
+	body{
+		font-size: 12px!important;
+	}
+}
+
