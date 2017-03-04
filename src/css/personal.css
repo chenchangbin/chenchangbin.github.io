@@ -138,11 +138,14 @@ header{
 }
 .peal-list a:nth-child(1){
 	display: inline-block;
+	width:50%;
 	background: url("../img/personal_25.png") center left no-repeat;
-	background-size: 18%;
+	background-size: 8%;
 }
 .peal-list a:nth-child(2){
 	display: inline-block;
+	width:49%;
+	text-align: right;
 }
 
 
@@ -156,17 +159,21 @@ header{
     justify-content: space-between; 
 }
 .peal-list1 a{
+	display: inline-block;
 	padding-left: 0.6375rem;
     font-size: 0.3438rem;
     color: #929292;
 }
 .peal-list1 a:nth-child(1){
 	display: inline-block;
+	width:50%;
 	background: url("../img/personal_28.png") center left no-repeat;
-	background-size: 32%;
+	background-size: 9%;
 }
 .peal-list1 a:nth-child(2){
 	display: inline-block;
+	width:49%;
+	text-align: right;
 }
 
 .peal-list2{
@@ -185,11 +192,14 @@ header{
 }
 .peal-list2 a:nth-child(1){
 	display: inline-block;
+	width:50%;
 	background: url("../img/details_wallet.png") center left no-repeat;
-	background-size: 26%;
+	background-size: 9%;
 }
 .peal-list2 a:nth-child(2){
 	display: inline-block;
+	width:49%;
+	text-align: right;
 }
 
 .peal-list3{
@@ -208,11 +218,14 @@ header{
 }
 .peal-list3 a:nth-child(1){
 	display: inline-block;
+	width:50%;
 	background: url("../img/personal_34.png") center left no-repeat;
-	background-size: 18%;
+	background-size: 8%;
 }
 .peal-list3 a:nth-child(2){
 	display: inline-block;
+	width:49%;
+	text-align: right;
 }
 
 /* footer */
