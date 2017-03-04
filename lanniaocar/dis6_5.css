@@ -1,0 +1,18 @@
+/* css 重置 */
+
+.js{width:100%; margin:10px auto 0 auto; }
+.js p{ padding:5px 0; font-weight:bold; overflow:hidden; }
+.js p span{ float:right; }
+.js p span a{ color:#f00; text-decoration:underline;  }
+.js textarea{ height:100px; width:98%; padding:5px; border:1px solid #ccc; border-top:2px solid #aaa; border-left:2px solid #aaa; }
+
+/* 本例子css */
+.ccbFocus{ margin:0 auto; width:467px; border:1px solid #ccc; padding:5px; position:relative; overflow:hidden; zoom:1;  }
+.ccbFocus .hd{ width:100%; padding-top:5px; overflow:hidden; }
+.ccbFocus .hd ul{ margin-right:-5px; overflow:hidden; zoom:1; }
+.ccbFocus .hd ul li{ padding-top:5px; float:left; text-align:center; }
+.ccbFocus .hd ul li img{ width:109px; height:65px; border:2px solid #ddd; cursor:pointer; margin-right:5px;  }
+.ccbFocus .hd ul li.on{ background:url("images/icoUp.gif") no-repeat center 0; }
+.ccbFocus .hd ul li.on img{ border-color:#f60; }
+.ccbFocus .bd li{ vertical-align:middle; }
+.ccbFocus .bd img{ width:467px; height:230px; display:block; }
