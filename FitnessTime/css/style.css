@@ -1,0 +1,197 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+ul,ol{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+	color:#333;
+}
+
+em,i{
+	font-style:normal;
+}
+body{
+	font-family:"Microsoft YaHei";
+}
+.wrap{
+	width:100%;
+	background:#202020;
+}
+.head{
+	min-height:100px;
+	margin:0 auto;
+}
+.img_1 h1{
+	color:#fff;
+	font-weight:bold;
+	display: inline-block;
+	
+}
+.head_right{
+	margin-top:35px; 
+	text-align: right;
+}
+.head_right a{
+/*	width: 13%;*/
+	display: inline-block;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	color:#fff;
+	margin-left: 13px;
+}
+.head_right a:hover{
+	text-decoration:none;
+	background:#e25050;
+	height:50px;
+	line-height: 50px;
+}
+
+
+
+
+.bg_1 img{
+	width:100%;
+	position: relative;
+
+}
+.banner{
+	position: relative;
+}
+
+.banner .container{
+	position:absolute;
+	left:50%;
+	top:0;
+}
+
+.banner .container p{
+	width:100%;
+	margin-left: -50%;
+	text-align: right;
+}
+
+
+.banner-img{
+	border:0;
+	display: block;
+	width:100%;
+}
+
+.con{
+	display: inline-block;
+	width: 100%;
+	/*background:#ffffff;*/
+}
+.con h1 span{
+	color:#e25050;
+}
+.con h1,p{
+	text-align: center;
+
+}
+.con_wid{
+	height:200px;
+
+}
+.con h5{
+	color:#bdbdbd;
+}
+
+.baise{
+	width:100%;
+	height:75px; 
+	background:#fff;
+}
+.bg_3{
+	background:url("../img/bg_06.png") center repeat; 
+	background-size:cover;
+}
+.yidong{
+	margin-top:180px;
+	margin-bottom:10px; 
+}
+.ul1{
+	display:flex;
+	padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.bjing{
+	background:#e25050;
+}
+.bjing h1{
+	background:#e25050;
+	margin:0px;
+	padding:0px; 
+	height: 150px;
+    line-height: 150px;
+}
+
+ul{
+	margin: 0 auto;
+    height:100%;
+    /*line-height: 26px;*/
+    font-size: 12px;
+}
+ul li{
+	line-height: 26px;
+}
+
+.beijing{
+	background:#d14343; 
+	height: 150px;
+    margin: 0 auto;
+}
+.ul1 img{
+	border-right:1px #e25050 solid;
+}
+.ul1 ul li img{
+	border:none;
+}
+.padding{
+	padding-bottom: 49px;
+    box-sizing: border-box;
+}
+.bottom_1{
+	padding-bottom: 35px;
+    box-sizing: border-box;
+}
+.border{
+	background:#e25050; 
+}
+.border img{
+	border-right:1px #fff solid;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+	.logo,.img_1{
+		text-align: center;
+	}
+	.logo{
+		line-height: 50px;
+	}
+	.img_1{
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-width:768px){
+
+.banner .container{
+		position:relative;
+	}
+
+}
