@@ -1,0 +1,49 @@
+header a {
+    display: block;
+    height: 0.9375rem;
+    line-height: 0.9375rem;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    padding: 0 0.1562rem;
+    font-size: 0.4062rem;
+    font-family: "SimSun";
+}
+header h2 {
+    height: 0.9375rem;
+    text-align: center;
+    line-height: 0.9375rem;
+    font-weight: normal;
+    background: #f9f9f9;
+    border-bottom: 1px #d1d2d3 solid;
+}
+.gray-bar {
+    height: 0.1875rem;
+    background: #f7f7f7;
+}
+.center{
+	width:100%;
+	padding:0 3%;
+	box-sizing: border-box;
+}
+.activity{
+	width:100%;
+	height:1.7031rem;
+	padding: 0.3281rem 0;
+	box-sizing: border-box;
+	border-bottom:0.0156rem #eee solid;
+}
+.activity img{
+	width:1.0312rem;
+	float:left;
+}
+.activity-left{
+	float:left;
+	margin-left: 0.3125rem;
+}
+.activity-left h3{
+	line-height: 0.5938rem;
+}
+.activity span{
+	float:right;
+}

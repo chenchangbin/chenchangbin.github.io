@@ -1,0 +1,146 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #f7f7f7;
+}
+header{
+	width:100%;
+	height:0.9375rem;
+	border-bottom: 1px #ddd solid;
+	background: #fff;
+    -webkit-display: flex;
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0 3%;
+    box-sizing:border-box; 
+    align-items: center;    
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+header h2{
+	display: inline-block;
+	height:0.9375rem;
+	text-align: center; 
+	line-height: 0.9375rem;
+	font-weight: normal;	
+}
+
+header>a{
+	display: block;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+	padding:0 0.1562rem;
+	box-sizing:border-box; 
+	font-size: 0.4062rem;
+	font-family: "SimSun";
+}
+header span a{
+	padding:0 0.1562rem;
+	box-sizing:border-box; 
+}
+#leftTabBox{
+	margin-top: 0.9375rem;
+}
+.hd ul{
+	width:100%;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+	text-align: center;
+	padding:0 3%;
+	box-sizing: border-box;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+html,body{
+	height: 100%;
+	overflow-y: hidden;
+}
+
+.pannel{
+	width:100%;
+	height:100%;
+}
+
+.pannel ul,.pn-reco{
+	padding:0 3%;
+	box-sizing: border-box;
+} 
+
+.pn-inner{
+	width:100%;
+	height:100%;
+	padding:0 3%;
+	box-sizing: border-box;
+}
+.on{
+	color:#ff2150;
+	border-bottom:0.0312rem #ff2150 solid;
+}
+.center-unused{
+	width:100%;
+	height: 2.1875rem; 
+	background: url("../img/bg-coupon.jpg") 0 0 no-repeat;
+	background-size: 100%; 
+	margin-top: 0.1562rem;
+}
+
+.center-left{
+	float: left;
+	width: 5.8438rem;
+	height: 100%;
+	padding: 0.4375rem 0 0 0.5312rem;
+    box-sizing: border-box;
+}
+.center-left p{
+	color:#fff;
+}
+.center-left p:nth-child(1){
+	font-size:0.3125rem; 
+}
+.center-left p:nth-child(2){
+	font-size:0.2812rem;
+}
+.center-left p:nth-child(2) span{
+	font-size: 0.75rem;
+}
+.center-right{
+	float: right;
+	height: 100%;
+	padding-top: 0.2688rem;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 0.4688rem;
+}
+.due{
+	width:100%;
+	height: 2.1875rem; 
+	background: url("../img/bg-coupon1.jpg") 0 0 no-repeat;
+	background-size: 100%;
+	margin-top: 0.1562rem;
+}
+
+
+.center-right p{
+	font-size: 0.3125rem;
+	line-height: 0.5rem;
+	color:#a7a7a7;
+}
+
+.pn-left{
+	background: #fff;
+}
+
+.pn-center{
+	background: #fff;
+}
+.pn-pater{
+	width:100%;
+	height:100%;
+	padding: 0 3%;
+	box-sizing: border-box;
+}

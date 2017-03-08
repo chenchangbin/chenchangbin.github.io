@@ -1,0 +1,271 @@
+header{
+	width:100%;
+	height:2.2656rem;
+	background: url("../img/score-bg.png") center no-repeat;
+	background-size: 100%;
+	padding: 0 3%;
+    box-sizing: border-box;
+}
+.head{
+	width:8.5938rem;
+	height:1.3281rem;
+	padding-top: 0.3906rem;
+	box-sizing: border-box;
+}
+.head img{
+	width:1.2344rem;
+	float:left;
+}
+.head-right{
+	padding-left: 70px;
+    box-sizing: border-box;
+}
+.head-right p:nth-child(1){
+	line-height: 0.6562rem;
+	font-size: 0.4375rem;
+	color:#fff;
+}
+.head-right p:nth-child(2){
+	line-height: 0.5rem;
+	font-size: 0.2812rem;
+	color:#fff;
+}
+.personal-list{
+	width:100%;
+	height:0.9375rem;
+	padding: 0 3%;
+    box-sizing: border-box;
+}
+.per-left{
+	float: left;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+	background:url("../img/personal_07.jpg") center left no-repeat;
+	background-size: 24%; 	
+}
+.per-left p{
+	padding-left: 0.6375rem;
+	font-size: 0.3438rem;
+	color:#929292;
+}
+.per-right{
+	float: right;
+	height:0.9375rem;
+	line-height: 0.9375rem;
+}
+.per-right p a{
+	font-size: 0.2812rem;
+	color:#a0a0a0;
+}
+.per-lists{
+	width: 100%;
+	height:1.5625rem;
+	border-top:0.0156rem #eaeaea solid;
+	border-bottom:0.0156rem #eaeaea solid;
+}
+.per-lists ul{
+	width: 100%;
+	height:100%;
+}
+.per-lists ul li a{
+	position: relative;
+}
+.per-lists ul a{
+	display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-size: 0.3125rem;
+    text-align: center;
+    padding-top: 1.0rem;
+    box-sizing: border-box;
+    color:#c2c2c2;
+}
+.per-lists ul li:nth-child(1) a{
+    background: url(../img/personal_11.jpg) center 0.3188rem no-repeat;
+    background-size: 0.5781rem;
+}
+.per-lists ul li:nth-child(2) a{
+    background: url(../img/personal_16.jpg) center 0.3188rem no-repeat;
+    background-size: 0.5781rem;
+}
+.per-lists ul li:nth-child(3) a{
+    background: url(../img/personal_18.png) center 0.3188rem no-repeat;
+    background-size: 0.5781rem;
+}
+.per-lists ul li:nth-child(4) a{
+    background: url(../img/personal_13.jpg) center 0.3188rem no-repeat;
+    background-size: 0.5781rem;
+}
+.per-lists ul li em{
+	display: block;
+	width:0.3281rem;
+	height:0.3281rem;
+	line-height: 0.3125rem;
+	border-radius: 50%;
+	position: absolute;
+	top:0.2969rem;
+	left:1.3281rem;
+	background: #ff2150;
+	color:#fff;
+	font-size: 0.2188rem;
+}
+.gray-bar {
+    height: 0.1875rem;
+    background: #f7f7f7;
+}
+.tel p a{
+	font-size: 0.3438rem;
+	color: #929292;
+}
+.service{
+	background:url("../img/personal_37.png") center left no-repeat;
+	background-size: 14%; 
+}
+.peal-list{
+	width: 100%;
+    height: 0.9375rem;
+    line-height: 0.9375rem; 
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.peal-list a{
+	padding-left: 0.6375rem;
+    font-size: 0.3438rem;
+    color: #929292;
+}
+.peal-list a:nth-child(1){
+	display: inline-block;
+	width:50%;
+	background: url("../img/personal_25.png") center left no-repeat;
+	background-size: 8%;
+}
+.peal-list a:nth-child(2){
+	display: inline-block;
+	width:49%;
+	text-align: right;
+}
+
+
+.peal-list1{
+	width: 100%;
+    height: 0.9375rem;
+    line-height: 0.9375rem; 
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; 
+}
+.peal-list1 a{
+	display: inline-block;
+	padding-left: 0.6375rem;
+    font-size: 0.3438rem;
+    color: #929292;
+}
+.peal-list1 a:nth-child(1){
+	display: inline-block;
+	width:50%;
+	background: url("../img/personal_28.png") center left no-repeat;
+	background-size: 9%;
+}
+.peal-list1 a:nth-child(2){
+	display: inline-block;
+	width:49%;
+	text-align: right;
+}
+
+.peal-list2{
+	width: 100%;
+    height: 0.9375rem;
+    line-height: 0.9375rem; 
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.peal-list2 a{
+	padding-left: 0.6375rem;
+    font-size: 0.3438rem;
+    color: #929292;
+}
+.peal-list2 a:nth-child(1){
+	display: inline-block;
+	width:50%;
+	background: url("../img/details_wallet.png") center left no-repeat;
+	background-size: 9%;
+}
+.peal-list2 a:nth-child(2){
+	display: inline-block;
+	width:49%;
+	text-align: right;
+}
+
+.peal-list3{
+	width: 100%;
+    height: 0.9375rem;
+    line-height: 0.9375rem; 
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.peal-list3 a{
+	padding-left: 0.6375rem;
+    font-size: 0.3438rem;
+    color: #929292;
+}
+.peal-list3 a:nth-child(1){
+	display: inline-block;
+	width:50%;
+	background: url("../img/personal_34.png") center left no-repeat;
+	background-size: 8%;
+}
+.peal-list3 a:nth-child(2){
+	display: inline-block;
+	width:49%;
+	text-align: right;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 1.25rem;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px #eee solid;
+}
+
+footer a{
+	display: block;
+	float: left;
+	width:25%;
+	height: 100%;
+	font-size: 0.2812rem;
+	text-align: center;
+	padding-top: 0.7812rem;
+	box-sizing: border-box;
+}
+
+footer a:nth-child(1){
+	background: url("../img/icon_index1.png") center 0.2188rem no-repeat;
+	background-size: 0.5781rem;
+}
+
+footer a:nth-child(2){
+	background: url("../img/icon_found.png") center 0.2188rem no-repeat;
+	background-size: 0.5781rem;
+}
+
+footer a:nth-child(3){
+	background: url("../img/icon_car.png") center 0.2188rem no-repeat;
+	background-size: 0.5781rem;
+}
+
+footer a:nth-child(4){
+	background: url("../img/icon_personal1.png") center 0.2188rem no-repeat;
+	background-size: 0.5781rem;
+}
