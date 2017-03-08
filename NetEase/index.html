@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+* { margin: 0; padding: 0; border: 0; outline: none; }
+li { list-style-type: none; }
+img { display: block; }
+a { text-decoration: none; color:#959595; }
+a:hover {color:#717171;}
+i, span { display:inline-block; }
+h1 { float: left; margin-left: 20px; }
+body { font-size: 12px; font-family: "Microsoft YaHei"; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.width-w { width: 1000px; margin:0 auto; }
+#top { margin-top: 100px; }
+#top .top-door { height: 50px; }
+#top .top-right { float: left; width: 755px; height: 28px; line-height: 28px;  border-left:1px solid #cccccc; }
+#top .top-right a { padding:0 9px; }
+#top .top-right .active { padding: 0 41px 0 13px; font-size: 16px; color:#717171; }
+#main { width: 100%; height: 600px; background: #ecf1ed; }
+#main .main-door { height: 600px; background:url("images/promPic1.jpg") center 0 no-repeat ; }
+#main .login { width: 295px; height: 460px; opacity: 0.9;filter: alpha(opacity=90); background: white; top: 70px; right:100px; border-radius: 4px; box-shadow: 1px 1px 3px 1px #e6e0d5;  }
+#main .login span { cursor: pointer; display: inline-block; font-size: 15px; width: 147px; height: 47px; line-height: 47px; text-align: center; color:#717171; }
+#main .login .active { background: red; background:linear-gradient( to top, #fefeff, #e9f1f7); border-bottom: 1px solid #d0d4d6; }
+#main .login span i { width: 13px; height: 13px; background: url("images/icon_code.png") 0 0 no-repeat; display: inline-block; margin-right:5px; }
+#main .login span:first-child { border-right: 1px solid #d4d6d7; }
+#email .email-content { width: 250px; height: 310px; margin: 0 auto; margin-top: 40px; }
+#email .em-text { box-shadow: 0 0 1px 1px #ccc inset; padding: 8px 8px; width: 235px; border:1px solid #999999; border-radius: 3px; margin-bottom: 20px; }
+#email .em-text i { vertical-align: middle; display: inline-block; background: url("images/bg_v3.png") -152px -63px no-repeat; width: 20px; height: 23px; }
+#email .em-text .text { height: 22px; width: 143px; color:#bdbdbd; font-size: 14px; outline: none; }
+#email .em-text b { width: 72px; height: 22px; display:block; float: right; background: url("images/bg_v3.png") -7px -118px no-repeat; border:none; }
+#email .em-password { box-shadow: 0 0 1px 1px #ccc inset; padding: 8px 8px; width: 235px; border:1px solid #999999; border-radius: 3px; margin-bottom: 20px; }
+#email .em-password i { vertical-align: middle; display: inline-block; background: url("images/bg_v3.png") -176px -63px no-repeat; width: 20px; height: 23px; }
+#email .em-password .password { height: 22px; width: 143px; color:#bdbdbd; font-size: 14px; outline: none; }
+#email .em-password b { width: 72px; height: 22px; display:block; float: right; background: url("images/bg_v3.png") -7px -118px no-repeat; border:none; }
+#email .em-login-time { margin-bottom: 20px; height: 17px; }
+#email .em-login-time a:nth-of-type(1){ float: right; }
+#email .em-login-time * { vertical-align: middle; }
+#email .em-login-time i { width: 13px; height: 13px; margin-right: 5px; background: url("images/bg_v3.png") -40px -160px no-repeat; border:none; }
+#email .em-btn { margin-bottom: 20px; }
+#email .em-btn input { cursor: pointer; width: 108px; height: 36px; border-radius: 3px; font-weight: bold; }
+#email .em-btn input:first-child { float: right; border:1px solid #afbfcf; background:linear-gradient(to top, #e5f1fa, #c0d5e7); color:#6d798c; box-shadow: 1px 1px 1px 1px #d9edd9; }
+#email .em-btn input:first-child:hover { color:#656b69; }
+#email .em-btn input:last-child:hover { background:linear-gradient(to top, #428fdf, #2769c7); }
+#email .em-btn input:last-child { border:1px solid #185aa5; background:linear-gradient(to top, #4793e5, #2479ce); color:white; box-shadow: 1px 1px 1px 1px #dadde7; }
+#email .em-servion { margin-bottom: 20px; color:#717171; }
+#email .em-servion a i{ display: inline-block; background: url("images/bg_v3.png") -159px -111px no-repeat; border:none; width: 12px; height: 12px; }
+#email .em-servion a:hover i { background: url("images/bg_v3.png") -175px -111px no-repeat; }
+#email .em-servion tt{ float: right; }
+#email .em-footer { height: 64px; width: 100%; background:linear-gradient(to top, #f5f4f3, #fffefd); }
+#email .em-ft { width: 240px; height: 40px; margin: 0 auto; padding-top: 10px; }
+#email .em-ft p { height: 20px; line-height: 20px; }
+#email .em-ft p:first-child a { color:#e60d40; }
+#email #email-import { display: none; top:20px; left: 0; width: 180px; line-height: 18px; border:1px solid #c5bea2; border-radius: 3px; padding: 5px 10px; background: #fffde4; color:#e9c5a1; }
+#sv-select {top:-2px; left: 16px; width: 142px; border:1px solid #c1c1c1; background: white; display: none; }
+#sv-select ul {}
+#sv-select ul li { padding:0 8px 0 15px; height: 20px; line-height: 20px; }
+#sv-select ul li:hover { background: #ddebf6; color:#388ae0;}
+#two { display: none; }
+#two h3 { margin-top: 30px; line-height: 35px; text-align: center; font-size: 16px; font-weight:normal; color: #626262; margin-bottom: 28px; }
+#two .two-img { height: 137px; margin-bottom: 20px; }
+#two .two-img .MT { right: 0; opacity: 0; filter: alpha(opacity=0); }
+#two .two-img .MT img { height: 137px; } 
+#two .two-img .two-q {left: 78px; margin:0 auto; }
+#two .two-img .two-q img { height: 137px; }
+#two .other-login { text-align: center; margin-bottom: 20px; }
+#two .other-login a { display: inline-block; padding:0 15px; height: 25px; line-height: 25px; background: #8fc7f6; color:white; border-radius: 30px; }
+#two .two-download { padding: 10px 0; text-align: center; }
+#two .two-download a { color: #4ea9f6; }
+#two .two-download a:last-child:hover { text-decoration: underline; }
+#two .two-download b { display: inline-block; width: 25px; text-align: center; color:#e0e4ea; }
+#prev,#next {  width: 25px; height: 25px; cursor: pointer; }
+#prev { right: 130px; bottom: 5px; background: url("images/bg_v3.png") 0 -456px no-repeat; }
+#prev:hover { background: url("images/bg_v3.png") 0 -491px no-repeat; }
+#next {  right: 100px; bottom: 5px; background: url("images/bg_v3.png") -36px -456px no-repeat; }
+#next:hover { background: url("images/bg_v3.png") -36px -491px no-repeat; }
+#footer {  background: white; }
+#footer .footer-door { margin:0 auto; height: 146px; }
+#footer .img-left{ display: inline-block; margin-top: 31px; }
+#footer .img-right{ display: inline-block; margin-top: 31px; margin-left: 40px; }
+#footer .img-center { display: inline-block; width:680px; height: 50px; margin-left: 80px; }
+#footer .img-center p { text-align: center; height: 20px; color: #959595; }
+#footer .img-center a { padding:0 8px; line-height: 20px; }
+
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	document.onselectstart = new Function("return false");
+	//二维码指导
+		function ShowMT(){
+			var oMt = document.getElementById("MT");
+			var oTwo_q = document.getElementById("two-q");
+			var oA = document.getElementById("two-show");
+
+			oA.onmouseover = oTwo_q.onmouseover = function(){
+				startMove(oTwo_q,{"left":10});
+				startMove(oMt,{"opacity":100});
+
+			}
+			oA.onmouseout = oTwo_q.onmouseout = function(){
+				startMove(oTwo_q,{"left":78});
+				startMove(oMt,{"opacity":10});
+			}
+
+		}
+	//背景切换
+	function ChangeBg(){
+		var iNow = 0;
+		var aArr_img = ["url('images/promPic1.jpg') center 0 no-repeat",
+						"url('images/promPic2.jpg') center 0 no-repeat",
+						"url('images/promPic3.jpg') center 0 no-repeat",
+						"url('images/promPic4.jpg') center 0 no-repeat",
+						"url('images/promPic5.jpg') center 0 no-repeat",
+						"url('images/promPic6.jpg') center 0 no-repeat",
+						"url('images/promPic7.jpg') center 0 no-repeat"
+						];
+		var	aArr_color = ["#ecf1ed","#ffebb6","#343b45","#212121","#faf4e8","#72cbd1","#0b121a"];
+		var oBg_img = document.getElementById("main-door");
+		var oBg_color = document.getElementById("main");
+		var oPrev = document.getElementById("prev");
+		var oNext = document.getElementById("next");
+		var timer = 0;
+
+		function move(){
+			clearInterval(timer);
+			timer = setInterval(fun1,2000);
+		}
+		move();
+		oBg_img.onmouseover = function(){
+			clearInterval(timer);
+		}
+		oBg_img.onmouseout = function(){
+			clearInterval(timer);
+			timer = setInterval(fun1,2000);
+		}
+		oPrev.onclick = function(){
+			iNow--;
+			if(iNow<0){
+				iNow = aArr_img.length-1;
+			}
+			oBg_img.style.background = aArr_img[iNow];
+			oBg_color.style.background = aArr_color[iNow];
+		}
+		oNext.onclick = function(){
+			iNow++;
+			if(iNow>aArr_img.length){
+				iNow = 0;
+			}
+			oBg_img.style.background = aArr_img[iNow];
+			oBg_color.style.background = aArr_color[iNow];
+		}
+		function fun1(){
+				iNow++;
+				if(iNow>=aArr_color.length){
+					iNow = 0;
+				}
+				oBg_img.style.background = aArr_img[iNow];
+				oBg_color.style.background = aArr_color[iNow];
+		}
+	}
+	//背景切换
+	//免登陆
+	function setLogin(){
+		var ocheck = document.getElementById("check");
+		var ocheckbox = document.getElementById("checkbox");
+		var oemail_import = document.getElementById("email-import");
+		var OnOff = true;
+
+		ocheck.onmouseover = function(){
+		oemail_import.style.display = "block";
+		}
+		ocheck.onmouseout = function(){
+			oemail_import.style.display = "none";
+		}
+		ocheck.onclick = function(){
+			if(OnOff){
+				ocheckbox.style.background = "url('images/bg_v3.png') -40px -180px no-repeat";
+				OnOff = false;
+			}else {
+				ocheckbox.style.background = "url('images/bg_v3.png') -40px -160px no-repeat";
+				OnOff = true;
+			}
+		}
+	}
+	////免登陆
+	///b版本选择
+	function Select_version(){
+		var oSv_a = document.getElementById("sv-a");
+		var oSv_div = document.getElementById("sv-select");
+
+		oSv_a.onclick = function(){
+			oSv_div.style.display = "block";
+		}
+		oSv_div.onmouseover = function(){
+			oSv_div.style.display = "block";
+		}
+		oSv_div.onmouseout = function(){
+			oSv_div.style.display = "none";
+		}
+	}	
+	///b版本选择
+	//鼠标经过按钮
+	function Buttons(){
+		var oMain = document.getElementById("main");
+		var aSubmit = oMain.getElementsByTagName("span");
+		var oEmail = document.getElementById("email");
+		var oTwo = document.getElementById("two");
+
+		aSubmit[0].onmouseover = function() { 
+			this.className = "none";
+			aSubmit[1].className = "active";
+			oEmail.style.display = "none";
+			oTwo.style.display = "block";
+		}
+		aSubmit[1].onmouseover = function() { 
+			this.className = "none";
+			aSubmit[0].className = "active";
+			oEmail.style.display = "block";
+			oTwo.style.display = "none";
+		}
+	}
+	//鼠标经过按钮
+	
+	//速度版运动框架
+	function getStyle(obj, name){
+		if(obj.currentStyle){
+			return obj.currentStyle[name];
+		}else{
+			return getComputedStyle(obj, false)[name];
+		}
+}
+ 
+function startMove(obj, json, fnEnd){
+clearInterval(obj.timer);
+obj.timer=setInterval(function (){
+var bStop=true;
+	for(var attr in json) {
+	var cur=0; 
+	if(attr=='opacity'){
+		cur=Math.round(parseFloat(getStyle(obj, attr))*100);
+	}else{
+		cur=parseInt(getStyle(obj, attr));
+	}
+		var speed=(json[attr]-cur)/6; 
+		speed=speed>0?Math.ceil(speed):Math.floor(speed); 
+	if(cur!=json[attr])
+		bStop=false;
+		if(attr=='opacity'){
+			obj.style.filter='alpha(opacity:'+(cur+speed)+')';
+			obj.style.opacity=(cur+speed)/100;
+		}else{
+			obj.style[attr]=cur+speed+'px';
+		}  
+}
+if(bStop){
+	clearInterval(obj.timer); 
+	if(fnEnd) fnEnd();
+}
+ 
+}, 2000); 
+}
+
+//	执行区域
+
+	//二维码指导
+		ShowMT();
+	//背景切换
+		ChangeBg();
+
+	//b版本选择
+		Select_version();
+
+	//免登陆
+		setLogin();
+	//鼠标经过按钮
+		Buttons();
+
+};
+</script>
+</head>
+<body>
+<div id="top">
+	<div class="width-w top-door">
+		<h1><a href="#"><img src="images/logo.png"></a></h1>
+		<div class="top-right">
+			<a class="active" href="#">中文邮箱第一品牌</a>
+			<a href="#">邮箱黄页</a>
+			<a href="#">企业邮箱</a>
+			<a href="#">VIP邮箱</a>
+			<a href="#">国外用户登录</a>
+			<a href="#">手机客户端</a>
+			<a href="#">帮助常见问题</a>
+			<span>|</span>
+			<a href="#">呼唤小易</a>
+		</div>
+	</div>
+</div>
+<div id="main">
+	<div class="width-w main-door relative" id="main-door">
+		<div class="smail-change absolute" id="prev"></div>
+		<div class="smail-change absolute" id="next"></div>
+		<div class="absolute login">
+			<span class="active"><i></i>二维码登录</span><span>邮箱账号登录</span>
+			<div id="email">
+				<div class="email-content">
+					<form>
+						<div class="em-text"><b></b><i></i><input type="text" placeholder="邮箱账号或手机号" class="text"></div>
+						<div class="em-password"><i></i><input type="password" placeholder="请输入登录密码"  class="password"></div>
+						<div class="em-login-time relative"><div id="email-import" class="absolute">为了您的信息安全，请不要在网吧或公用电脑上使用因此功能</div><a href="#">忘记密码？</a><i id="checkbox"></i><a id="check" href="#">十天内免登陆</a></div>
+						<div class="em-btn"><input type="button" value="去注册"><input type="button" value="登录"></div>
+						<div class="em-servion relative"><tt>正使用SLL登录</tt>版本: <a id="sv-a" href="#">默认版本<i></i><div id="sv-select" class="absolute"><ul><li>默认版本</li><li>网易邮箱6.0版本</li><li>网易邮箱6.0简易版本</li></ul></div></a></div>
+						<div class="em-servion"><a href="#"><img src="images/mailapp_logo.png"></a></div>
+					</form>
+				</div>
+				<div class="em-footer">
+					<div class="em-ft"><p><a href="#">点击查看为你定制の圣诞礼盒>></a></p>
+					<p><a href="#">拒绝裸奔 网易邮箱支持多种登录二次验证</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="two">
+				<h3>手机扫码 安全防盗</h3>
+				<div class="two-img relative">
+					<div id="MT" class="MT absolute"><img src="images/applogin_example.png"></div>
+					<div id="two-q" class="two-q absolute"><img src="images/getUrlQrcode.jpg"></div>
+				</div>
+				<div class="other-login"><a href="#">· 使用 邮箱大师 扫描二维码登录</a></div>
+				<div class="two-download"><a id="two-show" href="#">· 如何使用</a><b>/</b><a href="#">下载邮箱大师</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id=footer>
+	<div class="width-w top-footer">
+	<div class="img-left"><a href="#"><img src="images/wangyi.png"></a></div>
+	<div class="img-center">
+		<p><a href="#">网易首页</a><a href="#">关于网易免费邮</a><a href="#">一元夺宝</a><a href="#">网易·有钱</a><a href="#">网易严选</a><a href="#">网易一起拼</a><a href="#">网易公司版权所有©1999-2016</a><a href="#">网易首页</a></p>
+		<p>ICP证粤B2-20090191 粤公网安备 44010602000311号</p>
+	</div>
+	<div class="img-right"><a href="#"><img src="images/wangyi2.png"></a></div>
+	</div>
+</div>	
+</body>
+</html>

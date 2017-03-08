@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style - 副本.css">
+	<style type="text/css">
+		.addstyle{
+			background:url("img/promPic2.jpg") 0 0 no-repeat;
+			width:1000px;
+			height:600px;
+			background-size:auto;
+			margin:0 auto;
+			cursor:pointer; 
+			/*margin: 0 auto;	*/
+			/*background:#212121;*/
+		}
+		.addstyle2{
+			background:url("img/promPic.jpg") center no-repeat;
+			width:1000px;
+			height:600px;
+			margin:0 auto;
+			cursor:pointer;
+			/*background:#ffebb6; */
+		}
+		.addstyle3{
+			background:url("img/promPic22.jpg") center no-repeat;
+			width:1000px;
+			height:600px;
+			margin:0 auto;
+			cursor:pointer;
+			/*background:#ffebb6; */
+		}
+		.addstyle4{
+			background:url("img/promPic (1).jpg") center no-repeat;
+			width:1000px;
+			height:600px;
+			margin:0 auto;
+			cursor:pointer;
+			/*background:#ffebb6; */
+		}
+		.width_1{
+			width:100%;
+			height:600px; 
+			background:#212121; 
+		}
+		.width_2{
+			width:100%;
+			height:600px;
+			background:#ffebb6; 
+		}
+		.width_3{
+			width:100%;
+			height:600px;
+			background:#fa3d27; 
+		}
+		.width_4{
+			width:100%;
+			height:600px;
+			background:#d0d0d0; 
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			
+			var btn1 = document.getElementById("btn1");
+			var btn2 = document.getElementById("btn2");
+			var email = document.getElementById("email-content");
+			var qrcode = document.getElementById("qrcode");
+			var version_btn = document.getElementById("chioce-version");
+			var version_list = document.getElementById("hidden-ul");
+			var forget = document.getElementById("forget");
+			var tishi = document.getElementById("tishi");
+			var bjing1 = document.getElementById("bjing1");
+
+			var width_1 = document.getElementById("width_1");
+			var oA = document.getElementById("button1");
+ 			var oA1 = document.getElementById("button2");
+ 			var oDiv = document.getElementById("div1");
+ 			var OnOff = true;
+
+
+			btn2.onmouseover = function(){
+				qrcode.style.display = "none";
+				email.style.display = "block";
+				email.style.backgroundColor = "#fff";
+				btn2.style.background = "#fff";
+				btn2.style.borderBottomColor = "#fff";
+				btn1.style.background = "url('img/bg_btn.jpg') 0 0 repeat-x";
+				btn1.style.borderBottomColor = "#d1d5d1";
+			}
+			btn1.onmouseover = function(){
+				qrcode.style.display = "block";
+			//	qrcode.style.backgroundColor = "#fff";
+				email.style.display = "none";
+				btn1.style.background = "#fff";
+				btn1.style.borderBottomColor = "#fff";
+				btn2.style.background = "url('img/bg_btn.jpg') 0 0 repeat-x";
+				btn2.style.borderBottomColor = "#d1d5d1";
+		}
+			version_btn.onclick = function(){
+				version_list.style.display = "block";
+			}
+			version_list.onmouseleave = function(){
+				version_list.style.display = "none";
+		}
+			forget.onmouseover = function(){
+				tishi.style.display = "block";
+			}
+			forget.onmouseleave = function(){
+				tishi.style.display = "none";
+		}
+		oA.onclick = function(){
+			if(OnOff){
+				oDiv.className =  "addstyle2";
+				width_1.className =  "width_2";
+				OnOff = false;
+			}else{
+				oDiv.className = "addstyle3";
+				width_1.className =  "width_3";
+				OnOff = true;
+			}
+			
+		}
+		oA1.onclick = function(){
+			if(OnOff){
+				oDiv.className =  "addstyle";
+				width_1.className =  "width_1";
+				OnOff = false;
+			}else{
+				oDiv.className = "addstyle4";
+				width_1.className =  "width_4";
+				OnOff = true;
+			}
+		}		
+
+
+	}
+
+	</script>
+</head>
+<body>
+<div class="header_1 clearfix">
+	<a href="#"><img src="img/s_03.png"></a>
+	<ul>
+		<li><a href="#">邮箱首页</a></li>
+		<li><a href="#">企业邮箱</a></li>
+		<li><a href="#">VIP邮箱</a></li>
+		<li><a href="#">国外用户登录</a></li>
+		<li><a href="#">手机客户端</a></li>
+		<li><a href="#">帮助</a></li>
+		<li><a href="#">常见问题</a></li>
+		<li><a href="#">常见问题</a> | </li>
+		<li><a href="#">呼叫小易</a></li>
+	</ul>
+</div>
+<div id="width_1" class="width_1">
+<div id="div1" class="addstyle">
+
+<div class="ccc">
+	<div class="wrap">
+		<div class="btn-list clearfix">
+			<button id="btn1">二维码登陆</button>
+			<button id="btn2">邮箱账号登陆</button>
+		</div>
+		<div class="qr-content" id="qrcode">
+			<img src="img/qr_code.jpg">
+			<p class="qr-print"><a href="#">使用 邮箱大师 扫描二维码登录</a></p>
+			<p class="qr-download">
+				<a href="#">如何使用</a> | <a href="#">下载邮箱大师</a>
+			</p>
+		</div>
+		<div class="email-content" id="email-content">
+			<div class="email-center">
+				<form>
+					<div><input type="email" class="username" placeholder="邮箱账号或手机号"></div>
+					<div><input type="password" class="password" placeholder="密码"></div>
+					<div class="forget" id="forget">
+						<a href="#">忘记密码了?</a>
+						<input type="checkbox">
+						<lable>十天内免登录</lable>
+					
+						<div class="tishi" id="tishi">
+						<p>为了你的信息安全，请不要在网吧或公共电脑使用此功能！</p>
+						</div>
+					</div>
+					<div class="login-btn">
+						<button class="register">注册</button>
+						<button class="login">登陆</button>
+					</div>
+				</form>
+			
+				<div class="versions">
+					<ul class="hidden-ul" id="hidden-ul">
+						<li><a href="#">√默认版本1</a></li>
+						<li><a href="#">√网易邮箱6.0版</a></li>
+						<li><a href="#">√网易邮箱6.0简约版</a></li>
+					</ul>
+					<span>正使用SSL登录</span>
+					版本:
+					<em id="chioce-version">默认版本
+						<img src="img/icon_1.jpg">
+					</em>
+				</div>
+					<a href="#" class="download-img">
+						<img src="img/btn_1.jpg">
+					</a>
+				</div>					
+					<ul class="email-footer">
+						<li><a href="#">· 签到就送豪礼！人人有份！</a></li>
+						<li><a href="#">· 填问卷赢小米手机！光速前往 >> </a></li>
+					</ul>					
+			</div>
+	</div>
+
+			<div class="bnt_6">
+				<button id="button1"><</button>
+				<button id="button2">></button>
+			</div>	
+</div>
+
+<div class="footer_1">
+	<img class="footer_img1" src="img/e_14.png">
+		<p>
+			<a href="#">网易首页</a>
+			<a href="#">关于网易免费邮</a>
+			<a href="#">一元夺宝</a>
+			<a href="#">网易·有钱</a>
+			<a href="#">网易严选</a>
+			<a href="#">网易一起拼</a> | 
+			<a href="#">网易公司版权所有©1997-2016</a>
+			<a href="#">ICP证粤B2-20090191</a>
+			<a href="#">粤公网安备 44010602000311号</a>
+		</p>
+	<img class="footer_img2" src="img/e_17.png">
+</div>
+</div>	
+</div>
+</body>
+</html>
