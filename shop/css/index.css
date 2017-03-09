@@ -235,7 +235,7 @@ footer{
 }
 
 .goods-list ul li{
-	width: 2.4844rem;
+	width: 3rem;
 	text-align: center;
 	height: 2.8125rem;
 	border-right: 1px #eee solid;
@@ -248,6 +248,7 @@ footer{
 
 .goods-list ul li img{
 	width: 2.4844rem;
+	height:2.1094rem;
 	margin: 0 auto;
 }
 
