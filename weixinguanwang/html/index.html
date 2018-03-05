@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>咱们相爱吧</title>
+    <style>
+    	body,html{
+    		width: 100%;
+		    height: 100%;
+		    background: #ffd7d7;
+    	}
+    	html{
+			font-family: sans-serif;
+		}
+		html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{
+			margin:0;
+			border:0;
+			padding:0;
+			font-style:normal;
+		}
+		html,body {
+			-webkit-touch-callout:none;
+			-webkit-text-size-adjust:none;
+			-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+			-webkit-user-select:none;
+			background-color: #fff;
+		}
+		nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{
+			display: block;
+		}
+		img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea{
+			display:inline-block;
+		}
+		header,section,footer {
+			position:relative;
+		}
+		ol,ul{
+			list-style:none;
+		}
+		input,button,textarea {
+			border:0;
+			margin:0;
+			padding:0;
+			font-size:1em;
+			line-height:1em;
+			/*-webkit-appearance:none;*/
+			background-color:rgba(0, 0, 0, 0);
+		}
+		span{
+			display:inline-block;
+		}
+		a:active, a:hover {
+		  outline: 0;
+		}
+		a, a:visited{
+			text-decoration:none;
+		}
+
+		label, .wordWrap{
+		    word-wrap: break-word;
+		    word-break: break-all;
+		}
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		}
+		td,th {
+		  padding: 0;
+		}
+		.clearfix:after{
+			content: ' ';
+			display: block;
+			clear: both;
+			visibility:hidden;
+			line-height: 0;
+			height:0;
+		}
+		.loading_more{
+			display: block;
+			height: 1.5em;
+			width: 100%;
+		}
+		.loading_more:before {
+			display: inline-block; vertical-align: text-bottom;
+			content: ' '; height: 16px; width: 16px; margin-right: 6px;
+			background: url(../image/loading_more.gif) no-repeat center;
+			-webkit-background-size: contain;
+			background-size: contain;
+		} 
+		.loading_more:after {
+			content: '加载更多';	
+		}
+    	.heaList {
+		    -webkit-perspective: 400px;
+		    -moz-perspective: 400px;
+		    -o-perspective: 400px;
+		    -ms-perspective: 400px;
+		    perspective: 400px;
+		    width: 100%;
+		    height: 32%;
+		    margin: 0;
+		    padding: 0;
+		    position: relative;
+		    display: block;
+		    overflow: hidden;
+		    background: #000;
+    	}
+    	.heaList li {
+    		width: 20%;
+    		height: 33.33%;
+		    float: left;
+    	}
+    	.heaList1 { background: url(../image/a1.jpg) 0 0 no-repeat; background-size: 100%; }
+    	.heaList2 { background: url(../image/a2.jpg) 0 0 no-repeat; background-size: 100%; }
+    	.heaList3 { background: url(../image/a3.jpg) 0 0 no-repeat; background-size: 100%; }
+    	.heaList4 { background: url(../image/a4.jpg) 0 0 no-repeat; background-size: 100%; }
+    	.heaList5 { background: url(../image/a5.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList6 { background: url(../image/a6.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList7 { background: url(../image/a7.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList8 { background: url(../image/a8.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList9 { background: url(../image/a9.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList10 { background: url(../image/a10.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList11 { background: url(../image/a11.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList12 { background: url(../image/a12.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList13 { background: url(../image/a13.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList14 { background: url(../image/a14.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.heaList15 { background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%;}
+    	.animation1 { animation: dongHua1 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 6s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua1 {
+    		0% { background-size: 0%; }
+    		5% { background: url(../image/a20.jpg) 0 0 no-repeat;background-size: 120%; }
+    		10% { background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%;  }
+    		80% { background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%;  }
+    		90% { background-size: 0%; }
+    		95% { background: url(../image/a19.jpg) 0 0 no-repeat;background-size: 120%; }
+    		100% { background: url(../image/a19.jpg) 0 0 no-repeat;background-size: 100%; }
+    	}
+    	.animation5 { animation: dongHua5 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua5 {
+    		0% { background-size: 0%; }
+    		5% { background: url(../image/a20.jpg) 0 0 no-repeat;background-size: 120%; }
+    		10% { background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%;  }
+    		80% { background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%;  }
+    		90% { background-size: 0%; }
+    		95% { background: url(../image/a19.jpg) 0 0 no-repeat;background-size: 120%; }
+    		100% { background: url(../image/a19.jpg) 0 0 no-repeat;background-size: 100%; }
+    	}
+    	.animation2 { animation: dongHua2 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 5s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua2 {
+    		0% { transform: rotate(0deg); }
+    		25% { transform: rotate(0deg); }
+    		30% { transform: rotate(0deg); }
+    		50% { transform: rotate(360deg); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    		90% { transform: rotate(0deg);}
+    		100% {transform: rotate(0deg); }
+    	}
+    	.animation6 { animation: dongHua6 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 4s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua6 {
+    		0% { transform: rotate(0deg); }
+    		25% {transform: rotate(360deg); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    		30% {transform: rotate(0deg); }
+    		50% { transform: rotate(0deg); }
+    		90% { transform: rotate(0deg); }
+    		100% {transform: rotate(360deg); background: url(../image/a17.jpg) 0 0 no-repeat; background-size: 100%; }
+    	}
+    	.animation3 { animation: dongHua3 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua3 {
+    		0% { transform: scale(0);  }
+    		5% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1.2); }
+    		10% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		50% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		89% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		90% {transform: scale(0); }
+    		95% { transform: scale(1.2); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    		100% {transform: scale(1); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    	}
+    	.animation7 { animation: dongHua7 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 3s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua7 {
+    		0% { transform: scale(0);  }
+    		5% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1.2); }
+    		10% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		50% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		89% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; transform: scale(1);  }
+    		90% {transform: scale(0); }
+    		95% { transform: scale(1.2); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    		100% {transform: scale(1); background: url(../image/a16.jpg) 0 0 no-repeat; background-size: 100%; }
+    	}
+    	.animation4 { animation: dongHua4 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 3s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua4 {
+    		0% { opacity: 0;  }
+    		5% { background: url(../image/a15.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1; }
+    		50% { background: url(../image/a15.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1;  }
+    		89% { background: url(../image/a15.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1;  }
+    		90% { opacity: 0; }
+    		95% {  opacity: 1; background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%; }
+    		100% { opacity: 1; background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%; }
+    	}
+    	.animation8 { animation: dongHua8 9s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s infinite ; animation-fill-mode: forwards;   }
+    	@keyframes dongHua8 {
+    		0% { opacity: 0;  }
+    		5% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1; }
+    		50% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1;  }
+    		89% { background: url(../image/a18.jpg) 0 0 no-repeat; background-size: 100%; opacity: 1;  }
+    		90% { opacity: 0; }
+    		95% {  opacity: 1; background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%; }
+    		100% { opacity: 1; background: url(../image/a20.jpg) 0 0 no-repeat; background-size: 100%; }
+    	}
+    	.heaText {
+    		width: 100%;
+		    height: 32%;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    background: rgba(0,0,0,0.3);
+    	}
+    	.heaText h1,.heaText p {
+    		color: #FFFFFF;
+    		text-align: center;
+    	}
+    	.heaText h1 {
+    		margin-top: 40px;
+    		line-height: 80px;
+    	}
+    	/* benner */
+		.swipe {
+			width: 100%;
+			overflow: hidden;
+			visibility: hidden;
+			/*position: relative;*/
+			background: #d0adad;
+			padding-bottom: 10px;
+			border-radius: 22px;
+		}
+		.swipe-wrap {
+			overflow: hidden;
+			position: relative;
+		}
+		.swipe-wrap .swipe-box {
+			float: left;
+			width: 100%;
+			position: relative;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.swipe-wrap .swipe-box img {
+			float: left;
+			width: 124px;
+			height: 118px;
+		}
+		.swipe-wrap .swipe-box .textT {
+			text-align: center;
+		}
+		.swipe-wrap .swipe-box .textT h3 {
+			line-height: 50px;
+			color: #fff900;
+		}
+		.swipe-wrap .swipe-box .textT p {
+			line-height: 20px;
+			color: #962b2b;
+		}
+		/*audio*/
+		.aidioD {
+			width: 200px; height: 100px; text-align: center; background: #fafafa; border-radius: 50%; margin: auto; position: relative;    
+		}
+		.aidioD h4 { line-height: 35px; }
+		.aidioD audio { width: 70%; }
+		/*conterText*/
+		.conterText { width: 100%; padding: 10px; box-sizing: border-box; }
+		.conterText h4 {color: red;}
+		.conterText ul { display: flex; display:-webkit-flex; flex-flow: row wrap; justify-content: space-around; -webkit-justify-content: space-around; }
+		.conterText > ul li {  width: 48%; height: 40px; background: rgba(0, 188, 212, 0.46); line-height:40px; text-align: center; margin-bottom: 10px; 
+		}
+	</style>
+</head>
+<body>
+	<ul class="heaList">
+		<li class="heaList1"></li>
+		<li class="heaList2 animation1"></li>
+		<li class="heaList3 animation8"></li>
+		<li class="heaList4"></li>
+		<li class="heaList5 animation2"></li>
+		
+		<li class="heaList6 animation3"></li>
+		<li class="heaList7"></li>
+		<li class="heaList8 animation4"></li>
+		<li class="heaList9"></li>
+		<li class="heaList10 animation5"></li>
+		
+		<li class="heaList11"></li>
+		<li class="heaList12 animation6"></li>
+		<li class="heaList13"></li>
+		<li class="heaList14 animation7"></li>
+		<li class="heaList15"></li>
+	</ul>
+	<div class="heaText">
+		<h1>勇敢表白,我只为你</h1>
+		<p>“咱们相爱吧”为你打造专属时尚个性的表白方式</p>
+	</div>
+	<div style="height: 35px;"></div>
+	<div id='slider' class='swipe'>
+		<div class='swipe-wrap'>
+			<div class="swipe-box">
+				<img src="../image/b1.png" alt="">
+				<div class="textT">
+					<h3>咱们相爱吧</h3>	
+					<p>为Ta定制一个温馨表白视频,珍贵的相片,你想说的话,动听的音乐,终于打动了她,表白成功!</p>				
+				</div>
+			</div>
+			<div class="swipe-box">
+				<img src="../image/b2.png" alt="">
+				<div class="textT">
+					<h3>咱们相爱吧</h3>	
+					<p>经典爱情文章,伤感爱情故事,精美恋爱日志,优美恋爱文章,尽在爱情文章频道！</p>				
+				</div>
+			</div>
+			<div class="swipe-box">
+				<img src="../image/b3.png" alt="">
+				<div class="textT">
+					<h3>咱们相爱吧</h3>	
+					<p>最新的装逼表白图片神器都在这里了,快来试试吧！款式持续不断更新哦~完全免费！</p>				
+				</div>
+			</div>
+			<div class="swipe-box">
+				<img src="../image/b4.png" alt="">
+				<div class="textT">
+					<h3>咱们相爱吧</h3>	
+					<p>浪漫的表白网页无需复杂编辑,不需懂任何网页语言,只需填写内容,既可生成,并免费永久保存！</p>				
+				</div>
+			</div>
+			<div class="swipe-box">
+				<img src="../image/b5.png" alt="">
+				<div class="textT">
+					<h3>咱们相爱吧</h3>	
+					<p>每当属于你们De特殊日子来临时,送点什么给对方好呢?从今天起,有我们来帮您解决这一切!</p>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="width:100%; height: 20px;"></div>
+	<div class="aidioD">
+		<h4>独家赞助-咱们相爱吧</h4>
+		<audio src="https://github.com/chenchangbin/newDemoGit/blob/master/BinBinBin~/BgMusic/BgMusic_8.mp3?raw=true" controls="controls" preload="auto">
+		</audio>
+	</div>
+	<div style="width:100%; height: 20px;"></div>
+	<div class="conterText">
+		<h4>热门推荐</h4>
+		<ul>
+			<li onclick="openWin2_frame_music();">表白主题</li>
+			<li onclick="openWin2_frame_music();">表白视频</li>
+			<li onclick="openWin2_frame_music();">VIP订制</li>
+		</ul>
+	</div>
+</body>
+<!-- <script type="text/javascript" src="../script/api.js"></script> -->
+<script type="text/javascript" src="../script/swipe.js"></script>
+
+<script type="text/javascript">
+	apiready = function(){
+		
+	};
+	//benner
+	function closewin() {
+		api.closeWin({
+			name : 'win_swipe_pic'
+		});
+	}
+	var slider = Swipe(document.getElementById('slider'), {
+		auto : 3000,
+		continuous : true,
+		callback : function(pos) {
+		}
+	});
+	
+	//视频
+	function openWin2_frame_video() {
+		api.openWin({
+		    name: 'openWin2_frame_video',
+		    url: 'openWin2_frame_video.html',
+	        rect: {
+	            x: 0,
+	            y: 0,
+	            w: 'auto',
+	            h: 'auto',
+	        },
+	        progress: {
+	        	type:"page",
+	        	title:"BinBinBin~",
+	       		text:"加载中....",
+	       		color:"red",
+	        },
+	        animation : {
+	        	type:"movein",
+	        	subType:"from_right",
+	        	duration:300,
+	        },
+	        pageParam: {
+		        name: 'test'
+		    }
+	    });
+	}
+	//网页
+	function openWin2_frame_web() {
+		api.openWin({
+		    name: 'openWin2_frame_web',
+		    url: 'openWin2_frame_web.html',
+	        rect: {
+	            x: 0,
+	            y: 0,
+	            w: 'auto',
+	            h: 'auto',
+	        },
+	        progress: {
+	        	type:"page",
+	        	title:"BinBinBin~",
+	       		text:"加载中....",
+	       		color:"red",
+	        },
+	        animation : {
+	        	type:"movein",
+	        	subType:"from_right",
+	        	duration:300,
+	        },
+	        pageParam: {
+		        name: 'test'
+		    }
+	    });
+	}
+	//图片
+	function openWin2_frame_picture() {
+		api.openWin({
+		    name: 'openWin2_frame_picture',
+		    url: 'openWin2_frame_picture.html',
+	        rect: {
+	            x: 0,
+	            y: 0,
+	            w: 'auto',
+	            h: 'auto',
+	        },
+	        progress: {
+	        	type:"page",
+	        	title:"BinBinBin~",
+	       		text:"加载中....",
+	       		color:"red",
+	        },
+	        animation : {
+	        	type:"movein",
+	        	subType:"from_right",
+	        	duration:300,
+	        },
+	        pageParam: {
+		        name: 'test'
+		    }
+	    });
+	}
+	//音乐
+	function openWin2_frame_music() {
+		alert("敬请关注微信！");
+	}
+	
+
+
+
+
+
+
+
+
+
+</script>
+</html>
