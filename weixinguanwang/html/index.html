@@ -277,7 +277,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript"> 
   var a_idx = 0; 
-  jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善", "还点", "有完没完", "再点", "你再点", "再点你就嫁给我", "嫁", "给", "我"); var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); }); 
+  jQuery(document).ready(function($) { $("body").click(function(e) { var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善", "还点", "有完没完", "再点", "你再点", "再点你就嫁给我", "嫁", "给", "我", "我", "喜", "欢", "你", "何以", "解忧", "唯有", "暴富", "何以", "暴富", "唯有", "爱我"); var $i = $("<span/>").text(a[a_idx]); a_idx = (a_idx + 1) % a.length; var x = e.pageX, y = e.pageY; $i.css({ "z-index": 999999999999999999999999999999999999999999999999999999999999999999999, "top": y - 20, "left": x, "position": "absolute", "font-weight": "bold", "color": "#ff6651" }); $("body").append($i); $i.animate({ "top": y - 180, "opacity": 0 }, 1500, function() { $i.remove(); }); }); }); 
 </script>
 <body>
 	<ul class="heaList">
@@ -367,7 +367,7 @@
 	<div style="width:100%; height: 20px;"></div>
 	<div class="aidioD">
 		<h4>独家赞助-咱们相识吧</h4>
-		<audio src="https://github.com/chenchangbin/newDemoGit/blob/master/BinBinBin~/BgMusic/BgMusic_8.mp3?raw=true" controls="controls" autoplay="autoplay">
+		<audio loop  autoplay = “autoplay”  controls  src="https://github.com/chenchangbin/newDemoGit/blob/master/BinBinBin~/BgMusic/BgMusic_8.mp3?raw=true">
 		</audio>
 	</div>
 	<div style="width:100%; height: 20px;"></div>
